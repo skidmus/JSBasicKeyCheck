@@ -27,6 +27,7 @@ setInterval(Runtime, 5);
 
 function IsKeyDown(key) {
     if(JSBKC.keys.down == key) {
+        JSBKC.keys.down = null;
         return true;
     }
 }
@@ -34,6 +35,7 @@ function IsKeyDown(key) {
 
 function IsKeyUp(key) {
     if(JSBKC.keys.up == key) {
+        JSBKC.keys.up = null;
         return true;
     }
 }
