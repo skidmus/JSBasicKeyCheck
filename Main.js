@@ -10,7 +10,7 @@ function Runtime() {
     document.addEventListener('keydown', (event)=> {
         if(event.code !== JSBKC.keys.down) {
             JSBKC.keys.up = null;
-            JSBKC.keys.down = toString(event.code);
+            JSBKC.keys.down = event.code;
         }
     });
 
@@ -18,7 +18,7 @@ function Runtime() {
     document.addEventListener('keyup', (event)=> {
         if(event.code !== JSBKC.keys.up) {
             JSBKC.keys.down = null;
-            JSBKC.keys.up = toString(event.code);
+            JSBKC.keys.up = event.code;
         }
     });
 }
@@ -26,14 +26,14 @@ function Runtime() {
 setInterval(Runtime, 5);
 
 function IsKeyDown(key) {
-    if(JSBKC.keys.down == key) {
+    if(JSBKC.keys.down == toString(key)) {
         return true;
     }
 }
 
 
 function IsKeyUp(key) {
-    if(JSBKC.keys.up == key) {
+    if(JSBKC.keys.up == toString(key)) {
         return true;
     }
 }
