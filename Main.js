@@ -5,7 +5,7 @@ JSBKC.keys.up = null;
 JSBKC.keys.down = null;
 
 function Runtime() {
-    //Modules enabler/disabler
+    //Check if key down
     document.addEventListener('keydown', (event)=> {
         if(event.code !== JSBKC.keys.down) {
             JSBKC.keys.up = null;
@@ -13,6 +13,7 @@ function Runtime() {
         }
     });
 
+    //Check if key up
     document.addEventListener('keyup', (event)=> {
         if(event.code !== JSBKC.keys.up) {
             JSBKC.keys.down = null;
