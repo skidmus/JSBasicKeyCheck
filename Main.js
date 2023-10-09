@@ -25,7 +25,6 @@ function IsKeyDown(key) {
     if(JSBKC.keys.down == key) {
         return true;
     }
-    break;
 }
 
 
@@ -33,5 +32,4 @@ function IsKeyUp(key) {
     if(JSBKC.keys.up == key) {
         return true;
     }
-    break;
 }
