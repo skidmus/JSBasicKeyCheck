@@ -8,7 +8,6 @@ function Runtime() {
         if(event.code !== temple.keys.down) {
             JSBKC.keys.up = null;
             JSBKC.keys.down = event.code
-            console.log(temple.keys.down + "down");
         }
     });
 
@@ -16,7 +15,6 @@ function Runtime() {
         if(event.code !== temple.keys.up) {
             JSBKC.keys.down = null;
             JSBKC.keys.up = event.code
-            console.log(temple.keys.up + "up");
         }
     });
 }
