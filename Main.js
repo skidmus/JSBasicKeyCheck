@@ -7,14 +7,14 @@ JSBKC.keys.down = null;
 function Runtime() {
     //Modules enabler/disabler
     document.addEventListener('keydown', (event)=> {
-        if(event.code !== temple.keys.down) {
+        if(event.code !== JSBKC.keys.down) {
             JSBKC.keys.up = null;
             JSBKC.keys.down = event.code
         }
     });
 
     document.addEventListener('keyup', (event)=> {
-        if(event.code !== temple.keys.up) {
+        if(event.code !== JSBKC.keys.up) {
             JSBKC.keys.down = null;
             JSBKC.keys.up = event.code
         }
