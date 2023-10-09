@@ -24,3 +24,16 @@ function Runtime() {
 }
 
 setInterval(Runtime, 5);
+
+function IsKeyDown(key) {
+    if(JSBKC.keys.down == key) {
+        return true;
+    }
+}
+
+
+function IsKeyUp(key) {
+    if(JSBKC.keys.up == key) {
+        return true;
+    }
+}
