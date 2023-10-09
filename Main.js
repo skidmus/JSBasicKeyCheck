@@ -23,7 +23,7 @@ function Runtime() {
     });
 }
 
-setInterval(Runtime, 5);
+setInterval(Runtime, 25);
 
 function IsKeyDown(key) {
     if(JSBKC.keys.down == key) {
