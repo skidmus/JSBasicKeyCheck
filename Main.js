@@ -1,3 +1,5 @@
+JSBKC = {};
+
 JSBKC.keys = {};
 JSBKC.keys.up = null;
 JSBKC.keys.down = null;
