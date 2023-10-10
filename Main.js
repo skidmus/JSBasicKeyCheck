@@ -1,9 +1,9 @@
 //Set variables
-JSBKC = {};
+var JSBKC = {};
 
-JSBKC.keys = {};
-JSBKC.keys.up = null;
-JSBKC.keys.down = null;
+var JSBKC.keys = {};
+var JSBKC.keys.up = null;
+var JSBKC.keys.down = null;
 
 function Runtime() {
     //Check if key down
