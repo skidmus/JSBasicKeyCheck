@@ -24,7 +24,7 @@ function Runtime() {
 }
 
 setInterval(Runtime, 25);
-
+//functions
 function IsKeyDown(key) {
     if(JSBKC.keys.down == key) {
         JSBKC.keys.down = null;
