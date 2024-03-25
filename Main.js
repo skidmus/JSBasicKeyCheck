@@ -23,7 +23,6 @@ function Upcheck() {
         JSBKC.keys.down = null;
         JSBKC.keys.up = event.code;
     }
-    document.removeEventListener('keyup', Upcheck);
 }
 //functions
 function IsKeyDown(key) {
